@@ -98,7 +98,7 @@ const handleHeroImageError = (event) => {
 }
 
 function ChatbotWidget({ language }) {
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+  const API_URL = import.meta.env.VITE_API_URL || ''
   const t = translations[language] || translations.en
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState([
@@ -265,7 +265,7 @@ function ChatbotWidget({ language }) {
 }
 
 function App() {
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+  const API_URL = import.meta.env.VITE_API_URL || ''
   const [selectedLanguage, setSelectedLanguage] = useState('en')
   const [formData, setFormData] = useState(initialFormData)
   const [predictionResult, setPredictionResult] = useState(null)
