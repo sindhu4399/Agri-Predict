@@ -1,0 +1,7 @@
+"season,crop_type,soil_type,temperature,rainfall,humidity,nitrogen,phosphorus,potassium,yield_ton_per_ha"
+"2025-01,maize,clay,28.0,90.0,65.0,120.0,45.0,50.0,5.2"
+"2025-01,wheat,loam,22.0,70.0,55.0,100.0,40.0,45.0,4.8"
+"2025-02,paddy,sandy,30.0,120.0,75.0,130.0,50.0,55.0,6.1"
+"2025-02,maize,clay,31.0,100.0,68.0,125.0,47.0,52.0,5.5"
+"2025-03,wheat,loam,18.0,60.0,50.0,95.0,38.0,42.0,4.3"
+"2025-03,paddy,sandy,32.0,135.0,80.0,135.0,52.0,58.0,6.7"
