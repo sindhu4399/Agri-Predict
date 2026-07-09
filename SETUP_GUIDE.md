@@ -82,6 +82,26 @@ npm run dev
 - Hot Module Replacement (HMR) enabled
 - Auto-refresh on code changes
 
+Notes:
+- Vite's default dev port is `5173`, but the dev server may run on a different port (for example `3000`) if the environment `PORT` is set or another service is already using `5173`.
+- To explicitly run the frontend on a particular port, set the `PORT` environment variable for the session before starting Vite (examples below).
+
+PowerShell (set port for current session):
+```powershell
+$env:PORT = '5173'
+npm run dev
+```
+
+PowerShell (pass through to Vite):
+```powershell
+npm run dev -- --port 5173
+```
+
+Command Prompt (cmd.exe):
+```cmd
+set PORT=5173&& npm run dev
+```
+
 ### Production Build
 
 **Build Frontend:**
@@ -181,8 +201,14 @@ cd frontend
 copy .env.example .env.local
 ```
 
-The frontend is now configured to use environment variables for the backend API URL.
-The default value is `http://localhost:5000` if `VITE_API_URL` is not provided.
+The frontend is configured to read `VITE_API_URL` at build/dev time. If `VITE_API_URL` is not provided, the code falls back to `http://localhost:5000`.
+
+Example to write the variable from PowerShell (project root):
+```powershell
+echo VITE_API_URL="http://localhost:5000" > frontend\.env
+```
+
+If your backend runs on `http://localhost:3000` instead, set `VITE_API_URL` accordingly.
 
 Update `frontend/src/App.jsx` if you change the API variable name:
 ```javascript
