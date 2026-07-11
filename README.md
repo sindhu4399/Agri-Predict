@@ -1,4 +1,4 @@
-# HarvestIQ - Documentation Index
+**AgriPredict** - Documentation Index
 
 ## 📚 Documentation Files
 
@@ -82,7 +82,7 @@ npm run dev
 Then open the app in your browser at:
 
 ```bash
-http://localhost:5173
+http://localhost:3000
 ```
 
 If the API is hosted elsewhere, set the frontend environment variable before launch:
