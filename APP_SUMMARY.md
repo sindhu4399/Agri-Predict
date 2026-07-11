@@ -1,4 +1,4 @@
-# HarvestIQ - Application Summary
+# AgriPredict - Application Summary
 
 ## What is This Application?
 
