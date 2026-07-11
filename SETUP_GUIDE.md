@@ -1,4 +1,4 @@
-# HarvestIQ - Setup & Build Guide
+# AgriPredict - Setup & Build Guide
 
 ## Project Overview
 This is **HarvestIQ**, a premium farm intelligence platform with a React frontend and Flask backend that uses machine learning to predict crop yields and provide agricultural advice.
