@@ -68,7 +68,7 @@ echo Terminal 2 - Frontend (React):
 echo   cd frontend
 echo   npm run dev
 echo.
-echo Then open: http://localhost:5000
+echo Then open: http://localhost:3000
 echo.
 echo For more information, see SETUP_GUIDE.md
 echo.
